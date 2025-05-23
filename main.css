@@ -65,6 +65,8 @@ header {
     background-color: red;
     width: 15%;
     height: 100%;
+    border-right: 1px solid darkslategrey;
+    box-shadow: inset;
 }
 
 .menu_list {
@@ -72,9 +74,11 @@ header {
     list-style-type: none;
     height: 30%;
     padding-left: 5px;
+    
 }
 
 .menu_list li {
+    color: white;
     height: 25%;
 }
 
@@ -98,11 +102,19 @@ header {
 .main_today,
 .main_week {
     width: 50%;
+    border: 2px solid darkslategrey;
+    margin: 5px;
 }
 
 .main_table,
 .main_diary {
     width: 50%;
+    border: 2px solid darkslategrey;
+    margin: 5px;
+}
+
+.main_table table_title {
+    display: none;
 }
 
 footer {
