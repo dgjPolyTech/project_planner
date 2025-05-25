@@ -1,0 +1,132 @@
+body {
+    width: 90%;
+    position: absolute;
+    left: 5%; right: 5%;
+    background-color: snow;
+}
+
+header {
+    display: block;
+    text-align: center;
+    background-color: lightgreen;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ← 이 부분이 핵심 */
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main-title {
+    color: white;
+}
+
+.body_profile {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.body_profile_imgBox {
+    border-radius: 20%;
+    border: 2px solid darkslategrey;
+    overflow: hidden;
+    width: 15%;
+    height: 30%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.body_profile_imgBox img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.body_profile_nameTag {
+    width: 80%;
+    position: relative;
+}
+
+.user_name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 40px;
+}
+
+.main_container {
+    display: flex;
+    border: 1px solid darkslategrey;
+    height: 650px;
+}
+
+.main_container_list {
+    background-color: red;
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid darkslategrey;
+    box-shadow: inset;
+}
+
+.menu_list {
+    font-size: 20px;
+    list-style-type: none;
+    height: 30%;
+    padding-left: 5px;
+    
+}
+
+.menu_list li {
+    color: white;
+    height: 25%;
+}
+
+.main_container_contents {
+    background-color: snow;
+    width: 85%;
+    height: 100%;
+}
+
+.main_container_top,
+.main_container_bottom {
+    height: 50%;
+    display: flex;
+}
+
+.main_container_top h2,
+.main_container_bottom h2 {
+    margin-left: 5px;
+}
+
+.main_today,
+.main_week {
+    width: 50%;
+    margin: 5px;
+}
+
+.today_title,
+.today_list{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.nav-link.active{
+    background-color: #dc3545 !important;
+}
+
+.main_table,
+.main_diary {
+    width: 50%;
+    margin: 5px;
+}
+
+.main_table table_title {
+    display: none;
+}
+
+footer {
+    display: block;
+    height: 10%;
+    background-color: orange;
+}
