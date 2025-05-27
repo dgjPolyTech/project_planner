@@ -1,15 +1,22 @@
+html {
+    height: 100%;
+}
+
 body {
     width: 90%;
-    position: absolute;
+    height: 100%;
+    margin: 0 auto;
     left: 5%; right: 5%;
-    background-color: snow;
+    background-color: #f9faf9;
 }
 
 header {
     display: block;
+    height: 10%;
     text-align: center;
     background-color: lightgreen;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ← 이 부분이 핵심 */
+    margin-bottom: 2.5%;
 }
 
 .title {
@@ -25,38 +32,39 @@ header {
 }
 
 .body_profile {
-    display: flex;
     align-items: center;
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid black;
+    background-color: #f3f5f3;
+    display: center;
+}
+
+.body_profile_info {
+    text-align: center;
+    width: 100%;
     height: 30%;
-    margin: 5px 0;
 }
 
 .body_profile_imgBox {
-    border-radius: 100%;
-    border: 1px solid darkslategrey;
     overflow: hidden;
-    width: 15%;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
     display: inline-block;
-    box-shadow: inset;
+    width: 100%;
+    height: 75%;
+    /* box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); */
+    /* border-bottom: 1px solid grey; */
 }
 
 .body_profile_imgBox img {
-    width: 100%;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    border: 1px solid grey;
     object-fit: cover;
-    border: 30px solid darkslategrey;
 
-}
-
-.body_profile_nameTag {
-    width: 80%;
-    position: relative;
 }
 
 .user_name {
-    position: absolute;
     left: 0;
     bottom: 0;
     font-size: 40px;
@@ -65,8 +73,11 @@ header {
 
 .main_container {
     display: flex;
-    border: 2px solid darkslategrey;
-    height: 650px;
+    border: 1px solid grey;
+    height: 75%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ← 이 부분이 핵심 */
+    margin-bottom: 2.5%;
 }
 
 .main_container_list {
@@ -80,14 +91,17 @@ header {
 .menu_list {
     font-size: 20px;
     list-style-type: none;
-    height: 30%;
+    width: 100%;
+    height: 40%;
     padding-left: 5px;
     
 }
 
 .menu_list li {
     color: white;
-    height: 25%;
+    border-bottom: 0.5px solid grey; 
+    width: 95%;
+    margin-bottom: 2.5%;
 }
 
 .main_container_contents {
@@ -109,20 +123,18 @@ header {
 
 .main_today,
 .main_week {
-    width: 50%;
-    border: 2px solid darkslategrey;
-    margin: 5px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    /* border-top: 0.5px solid grey; */
 }
 
 .main_table,
 .main_diary {
-    width: 50%;
-    border: 2px solid darkslategrey;
-    margin: 5px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    /* border-top: 0.5px solid grey; */
 }
 
 .main_table table_title {
@@ -130,7 +142,9 @@ header {
 }
 
 footer {
-    display: block;
-    height: 10%;
-    background-color: orange;
+    height: 7.5%;
+    background-color: #E3E7E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

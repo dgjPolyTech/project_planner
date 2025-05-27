@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DODAY NOTE - main</title>
     <link rel="stylesheet" href="css/main.css">
+    <script>
+        
+    </script>
 </head>
 
 <body>
@@ -15,18 +18,19 @@
         </div>
     </header>
 
-    <div class="body_profile">
-        <div class="body_profile_imgBox">
-            <img src="imgs/dolpin.png" />
-        </div>
-        
-        <div class="body_profile_nameTag">
-            <h2><p class="user_name">000님, 환영합니다.</p></h2>
-        </div>
-    </div>
-
     <div class="main_container">
+
         <div class="main_container_list">
+            <div class="body_profile">
+                <div class="body_profile_imgBox">
+                    <img src="imgs/basic2.png"/>
+                </div>
+                
+                <div class="body_profile_info">
+                    <h2>000님, 환영합니다.</h2>
+                </div>
+            </div> 
+
             <ul class="menu_list">
                 <li>홈</li>
                 <li>통계</li>
@@ -39,19 +43,22 @@
             <div class="main_container_top">
                 <div class="main_today">
                     <div class="today_title">
-                        <h2>오늘의 할 일 ✏️</h2> <button>버튼</button>
+                        <p><span style="font-size: 1.5em; font-weight: bold;">오늘의 할 일 ✏️</span> — 쉽고 간단하게 오늘의 일을 기록하고 관리하세요.</p>
+                        <hr>
                     </div>
-                    <div class="today_list">
+                    <!-- <div class="today_list">
                         <ol>
-                            <li>밥먹기</li>
+                            <li style="border-bottom: 0.5px solid grey;">밥먹기</li>
                             <li>잠자기</li>
                             <li>숨쉬기</li>
                         </ol>
-                    </div>
+                    </div>  -->
                 </div>
+
                 <div class="main_table">
-                    <h2 name="table_title">시간표 🕰️</h2> 
-                    <div class="table_shcedule">
+                    <p><span style="font-size: 1.5em; font-weight: bold;">시간표</span> — 한 주 동안의 일정을 시간표로 한눈에 확인하세요.</p>
+                    <hr>
+                    <!-- <div class="table_shcedule">
                         <table style="border: 2px solid black;">
                             <thead>
                                 <tr>
@@ -73,23 +80,25 @@
                                 <tr><td></td><td>휴식</td><td>잠자기</td><td></td><td></td><td></td><td></td></tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="main_container_bottom">
                 <div class="main_week">
                     <h2>주간 할 일 🗓️</h2>
+                    <hr>
                 </div>
                 <div class="main_diary">
                     <h2>다이어리 📒</h2>
+                    <hr>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        footer 입니다.
+        Copyright
     </footer>
 </body>
 </html>
