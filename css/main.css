@@ -1,150 +1,177 @@
-html {
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background-color: #F0FDF4; /* 연한 민트/초록 바탕 */
+    color: #1F2937;
 }
 
 body {
     width: 90%;
-    height: 100%;
     margin: 0 auto;
-    left: 5%; right: 5%;
-    background-color: #f9faf9;
 }
 
+/* 헤더 */
 header {
-    display: block;
-    height: 10%;
-    text-align: center;
-    background-color: lightgreen;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ← 이 부분이 핵심 */
-    margin-bottom: 2.5%;
+    background-color: #86EFAC; /* 연한 연두 */
+    color: #065F46;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
 }
 
 .main-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 메인 컨테이너 */
+.main_container {
+    display: flex;
+    height: 75%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    margin: 30px 0;
+}
+
+/* 좌측 메뉴 */
+.main_container_list {
+    background-color: #34D399; /* 민트 포인트 */
     color: white;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    width: 20%;
+    padding: 20px 10px;
+    box-sizing: border-box;
 }
 
 .body_profile {
-    align-items: center;
-    width: 100%;
-    height: 40%;
-    border-bottom: 1px solid black;
-    background-color: #f3f5f3;
-    display: center;
-}
-
-.body_profile_info {
     text-align: center;
-    width: 100%;
-    height: 30%;
-}
-
-.body_profile_imgBox {
-    overflow: hidden;
-    display: inline-block;
-    width: 100%;
-    height: 75%;
-    /* box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); */
-    /* border-bottom: 1px solid grey; */
+    margin-bottom: 30px;
 }
 
 .body_profile_imgBox img {
-    width: 90%;
-    height: 90%;
-    margin: 5%;
-    border: 1px solid grey;
+    width: 80%;
+    border-radius: 50%;
+    border: 2px solid #E5E7EB;
     object-fit: cover;
-
 }
 
-.user_name {
-    left: 0;
-    bottom: 0;
-    font-size: 40px;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
-
-.main_container {
-    display: flex;
-    border: 1px solid grey;
-    height: 75%;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ← 이 부분이 핵심 */
-    margin-bottom: 2.5%;
-}
-
-.main_container_list {
-    background-color: lightblue;
-    width: 15%;
-    height: 100%;
-    border-right: 1px solid darkslategrey;
-    box-shadow: inset;
+.body_profile_info h2 {
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .menu_list {
-    font-size: 20px;
-    list-style-type: none;
-    width: 100%;
-    height: 40%;
-    padding-left: 5px;
-    
+    list-style: none;
+    padding: 0;
 }
 
 .menu_list li {
-    color: white;
-    border-bottom: 0.5px solid grey; 
-    width: 95%;
-    margin-bottom: 2.5%;
+    padding: 10px 0;
+    border-bottom: 1px solid #A7F3D0;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
+.menu_list li:hover {
+    background-color: #10B981;
+}
+
+/* 콘텐츠 영역 */
 .main_container_contents {
-    background-color: snow;
-    width: 85%;
-    height: 100%;
+    width: 80%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #ECFDF5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .main_container_top,
 .main_container_bottom {
-    height: 50%;
     display: flex;
-}
-
-.main_container_top h2,
-.main_container_bottom h2 {
-    margin-left: 5px;
+    flex: 1;
+    gap: 20px;
 }
 
 .main_today,
-.main_week {
-    width: 45%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    /* border-top: 0.5px solid grey; */
-}
-
+.main_week,
 .main_table,
 .main_diary {
-    width: 45%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    /* border-top: 0.5px solid grey; */
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.main_table table_title {
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #D1FAE5;
+    margin: 10px 0;
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #D1FAE5;
+    color: #064E3B;
+    margin-top: 40px;
+}
+
+/* 모바일 전용 */
+.main_container_mobile,
+.main_container_list_mobile {
     display: none;
 }
 
-footer {
-    height: 7.5%;
-    background-color: #E3E7E9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* 반응형 */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .main_container {
+        display: none;
+    }
+
+    .main_container_mobile {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    .main_container_list_mobile {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #34D399;
+        padding: 10px 0;
+    }
+
+    .main_container_list_mobile li {
+        color: white;
+        list-style: none;
+    }
+
+    footer {
+        display: none;
+    }
 }
