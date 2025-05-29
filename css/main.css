@@ -151,11 +151,65 @@ header {
 }
 
 .today_list_input {
-    flex: 2; /* 40% 비율 */
-    /* background-color: #F0FDF4; */
+    flex: 2; /* 영역 내 비율 */
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    border-radius: 10px; 
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05); 
+    display: flex; 
+    flex-direction: column; /* 정렬 방향 */
+    gap: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.today_list_input h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.today_list_input hr {
+    margin: 4px 0;
+}
+
+.input_text {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.priority_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    flex-wrap: wrap; /* 모바일 대응 */
+    box-sizing: border-box;
+}
+
+.button_wrapper {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add_button {
+    padding: 8px 16px;
+    background-color: #10B981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.add_button:hover {
+    background-color: #059669;
 }
 
 /* 습관 관리 관련 */
@@ -193,11 +247,25 @@ header {
 }
 
 .habit_list_input {
-    flex: 2; /* 40% 비율 */
-    /* background-color: #F0FDF4; */
+    flex: 2; /* 영역 내 비율 */
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    border-radius: 10px; 
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05); 
+    display: flex; 
+    flex-direction: column; /* 정렬 방향 */
+    gap: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.habit_list_input h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.habit_list_input hr {
+    margin: 4px 0;
 }
 
 /* 향후 일정 관련 */
@@ -305,48 +373,4 @@ footer {
     background-color: #D1FAE5;
     color: #064E3B;
     margin-top: 40px;
-}
-
-/* 모바일 전용 */
-.main_container_mobile,
-.main_container_list_mobile {
-    display: none;
-}
-
-/* 반응형 */
-@media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
-
-    .main_container {
-        display: none;
-    }
-
-    .main_container_mobile {
-        display: block;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        background-color: white;
-    }
-
-    .main_container_list_mobile {
-        display: flex;
-        justify-content: space-around;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #34D399;
-        padding: 10px 0;
-    }
-
-    .main_container_list_mobile li {
-        color: white;
-        list-style: none;
-    }
-
-    footer {
-        display: none;
-    }
 }

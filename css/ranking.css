@@ -154,13 +154,6 @@ header {
     display: flex;
     gap: 20px;
     flex: 1;
-    overflow: hidden; /* 오늘의 할 일 전체에서 넘치는 건 숨김 */
-}
-
-.today_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
     overflow: hidden; /* 안 보이는 건 숨김 처리 */
 }
 
@@ -213,46 +206,3 @@ footer {
     margin-top: 40px;
 }
 
-/* 모바일 전용 */
-.ranking_container_mobile,
-.ranking_container_list_mobile {
-    display: none;
-}
-
-/* 반응형 */
-@media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
-
-    .ranking_container {
-        display: none;
-    }
-
-    .ranking_container_mobile {
-        display: block;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        background-color: white;
-    }
-
-    .ranking_container_list_mobile {
-        display: flex;
-        justify-content: space-around;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #34D399;
-        padding: 10px 0;
-    }
-
-    .ranking_container_list_mobile li {
-        color: white;
-        list-style: none;
-    }
-
-    footer {
-        display: none;
-    }
-}

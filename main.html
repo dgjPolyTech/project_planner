@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DODAY NOTE - main</title>
     <link rel="stylesheet" href="css/main.css">
-    <style>
+    <!-- <style>
         .today_list ol {
             display: flex;
             flex-wrap: wrap;
@@ -34,7 +34,7 @@
             text-decoration: line-through;
             color: #9CA3AF;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -85,22 +85,26 @@
                                 <li>밥 먹기</li>
                                 <li>잠 자기</li>
                                 <li>숨 쉬기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
                             </ol>
                         </div>
 
                         <div class="today_list_input">
-                            할 일 등록
+                            <h3>할 일 등록</h3>
+                            <hr>
+                            <input type="text" id="todo_input" class="input_text" placeholder="할 일을 입력하세요" />
+
+                            <div class="priority_group">
+                                <span>중요도:</span>
+                                <label><input type="radio" name="priority" value="1" /> 1</label>
+                                <label><input type="radio" name="priority" value="2" /> 2</label>
+                                <label><input type="radio" name="priority" value="3" /> 3</label>
+                            </div>
+
+                            <div class="button_wrapper">
+                                <button class="add_button">등록</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -132,7 +136,14 @@
                         </div>
 
                         <div class="habit_list_input">
-                            할 일 등록
+                            <h3>습관 등록</h3>
+                            <hr>
+                            <label for="todo_input">습관명</label>
+                            <input type="text" id="todo_input" class="input_text" placeholder="할 일을 입력하세요" style="border: none; border-bottom: 1px solid black;"/>
+
+                            <div class="button_wrapper">
+                                <button class="add_button">등록</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,25 +159,10 @@
                     <div class="week_body">
                         <div class="week_list">
                             <ol>
-                                <li>밥 먹기</li>
-                                <li>잠 자기</li>
-                                <li>숨 쉬기</li>
-                                <li>밥 먹기</li>
-                                <li>잠 자기</li>
-                                <li>숨 쉬기</li>
-                                <li>밥 먹기</li>
-                                <li>잠 자기</li>
-                                <li>숨 쉬기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
-                                <li>밥 먹기</li>
+                                <li>
+                                    <span class="week_list_title">플레 찍기</span>
+                                    <span class="week_list_date">d-7</span>
+                                </li>
                             </ol>
                         </div>
 
@@ -213,21 +209,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="main_container_mobile">
-        <div class="main_container_mobile_profile">
-
-        </div>
-    </div>
-
-    <div class="main_container_list_mobile">
-        <ol>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-        </ol>
     </div>
 
     <footer>
