@@ -5,15 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DODAY NOTE - main</title>
     <link rel="stylesheet" href="css/main.css">
-    <script>
-        
-    </script>
+    <style>
+        .today_list ol {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .today_list ol li {
+            width: 50%;
+            height: 45px;
+            box-sizing: border-box;
+            padding-left: 8px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .today_list ol li:hover {
+            background-color: #F0FDF4;
+        }
+
+        .today_list ol li.completed {
+            text-decoration: line-through;
+            color: #9CA3AF;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="title">
-            <h1 class="main-title">DODAY NOTE</h1>
+            <h1 class="main-title" >DODAY NOTE</h1>
             <p>로그인/설정</p>
         </div>
     </header>
@@ -25,17 +52,16 @@
                 <div class="body_profile_imgBox">
                     <img src="imgs/basic2.png"/>
                 </div>
-                
+
                 <div class="body_profile_info">
                     <h2>000님, 환영합니다.</h2>
                 </div>
-            </div> 
+            </div>
 
             <ul class="menu_list">
-                <li>홈</li>
-                <li>통계</li>
-                <li>업적</li>
-                <li>꾸미기</li>
+                <li><a href="main.html">홈</a></li>
+                <li><a href="ranking.html">통계</a></li>
+                <li><a href="">꾸미기</a></li>
             </ul>
         </div>
 
@@ -43,55 +69,147 @@
             <div class="main_container_top">
                 <div class="main_today">
                     <div class="today_title">
-                        <p><span style="font-size: 1.5em; font-weight: bold;">오늘의 할 일 ✏️</span> — 쉽고 간단하게 오늘의 일을 기록하고 관리하세요.</p>
+                        <p><span style="font-size: 1.25em; font-weight: bold;">오늘의 할 일</span> — 쉽고 간단하게 오늘의 일을 기록하고 관리하세요.</p>
                         <hr>
                     </div>
-                    <!-- <div class="today_list">
-                        <ol>
-                            <li style="border-bottom: 0.5px solid grey;">밥먹기</li>
-                            <li>잠자기</li>
-                            <li>숨쉬기</li>
-                        </ol>
-                    </div>  -->
+
+                    <div class="today_body">
+                        <div class="today_list">
+                            <ol>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                            </ol>
+                        </div>
+
+                        <div class="today_list_input">
+                            할 일 등록
+                        </div>
+                    </div>
                 </div>
 
-                <div class="main_table">
-                    <p><span style="font-size: 1.5em; font-weight: bold;">시간표</span> — 한 주 동안의 일정을 시간표로 한눈에 확인하세요.</p>
-                    <hr>
-                    <!-- <div class="table_shcedule">
-                        <table style="border: 2px solid black;">
-                            <thead>
-                                <tr>
-                                <th class="sun">일</th>
-                                <th>월</th>
-                                <th>화</th>
-                                <th>수</th>
-                                <th>목</th>
-                                <th>금</th>
-                                <th class="sat">토</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td></td><td>휴식</td><td>잠자기</td><td></td><td></td><td></td><td></td></tr>
-                                <tr><td></td><td>휴식</td><td>잠자기</td><td></td><td></td><td></td><td></td></tr>
-                                <tr><td></td><td>휴식</td><td>잠자기</td><td></td><td></td><td></td><td></td></tr>
-                                <tr><td></td><td>휴식</td><td>잠자기</td><td></td><td></td><td></td><td></td></tr>
-                                <tr><td></td><td>휴식</td><td>잠자기</td><td></td><td></td><td></td><td></td></tr>
-                                <tr><td></td><td>휴식</td><td>잠자기</td><td></td><td></td><td></td><td></td></tr>
-                            </tbody>
-                        </table>
-                    </div> -->
+                <div class="main_habit">
+                    <div class="habit_title">
+                        <p><span style="font-size: 1.25em; font-weight: bold;">습관 관리</span> — 쉽고 간단하게 오늘의 일을 기록하고 관리하세요.</p>
+                        <hr>
+                    </div>
+
+                    <div class="habit_body">
+                        <div class="habit_list">
+                            <ol>
+                                <li>
+                                    <span class="habit_list_title">골드 찍기</span>
+                                    <span class="habit_list_date">d-7</span>
+                                </li>
+
+                                <li>
+                                    <span class="habit_list_title">플레 찍기</span>
+                                    <span class="habit_list_date">d-7</span>
+                                </li>
+
+                                <li>
+                                    <span class="habit_list_title">다이아 가기</span>
+                                    <span class="habit_list_date">d-7</span>
+                                </li>
+
+                            </ol>
+                        </div>
+
+                        <div class="habit_list_input">
+                            할 일 등록
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="main_container_bottom">
                 <div class="main_week">
-                    <h2>주간 할 일 🗓️</h2>
-                    <hr>
+                    <div class="week_title">
+                        <p><span style="font-size: 1.25em; font-weight: bold;">향후 일정</span> — 쉽고 간단하게 오늘의 일을 기록하고 관리하세요.</p>
+                        <hr>
+                    </div>
+
+                    <div class="week_body">
+                        <div class="week_list">
+                            <ol>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                            </ol>
+                        </div>
+
+                        <div class="week_list_input">
+                            할 일 등록
+                        </div>
+                    </div>
                 </div>
                 <div class="main_diary">
-                    <h2>다이어리 📒</h2>
-                    <hr>
+                    <div class="diary_title">
+                        <p><span style="font-size: 1.25em; font-weight: bold;">다이어리 </span> — 메모하고 싶은 것을 기록하세요.</p>
+                        <hr>
+                    </div>
+
+                    <div class="diary_body">
+                        <div class="diary_list">
+                            <ol>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>잠 자기</li>
+                                <li>숨 쉬기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                                <li>밥 먹기</li>
+                            </ol>
+                        </div>
+
+                        <div class="diary_list_input">
+                            할 일 등록
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,7 +217,7 @@
 
     <div class="main_container_mobile">
         <div class="main_container_mobile_profile">
-            
+
         </div>
     </div>
 

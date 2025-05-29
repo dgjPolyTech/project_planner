@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
-    background-color: #FFFFFF; /* 연한 민트/초록 바탕 */
+    background-color: #F0FDF4; /* 연한 민트/초록 바탕 */
     color: #1F2937;
 }
 
@@ -27,13 +27,13 @@ header {
     align-items: center;
 }
 
-.main-title {
+.ranking-title {
     font-size: 24px;
     font-weight: bold;
 }
 
 /* 메인 컨테이너 */
-.main_container {
+.ranking_container {
     display: flex;
     height: 75%;
     border-radius: 10px;
@@ -44,7 +44,7 @@ header {
 }
 
 /* 좌측 메뉴 */
-.main_container_list {
+.ranking_container_list {
     background-color: #34D399; /* 민트 포인트 */
     color: white;
     width: 15%;
@@ -86,7 +86,7 @@ header {
 }
 
 /* 콘텐츠 영역 */
-.main_container_contents {
+.ranking_container_contents {
     width: 85%;
     padding: 30px;
     box-sizing: border-box;
@@ -96,17 +96,17 @@ header {
     gap: 20px;
 }
 
-.main_container_top,
-.main_container_bottom {
+.ranking_container_top,
+.ranking_container_bottom {
     display: flex;
     flex: 1;
     gap: 20px;
 }
 
-.main_today,
-.main_week,
-.main_habit,
-.main_diary {
+.ranking_today,
+.ranking_week,
+.ranking_habit,
+.ranking_diary {
     flex: 1;
     background-color: white;
     border-radius: 10px;
@@ -117,12 +117,18 @@ header {
     justify-content: space-between;
 }
 
-/* 오늘의 할 관련 */
 .today_body {
     display: flex;
     gap: 20px;
     flex: 1;
     overflow: hidden; /* 오늘의 할 일 전체에서 넘치는 건 숨김 */
+}
+
+.today_body {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    overflow: hidden; /* 안 보이는 건 숨김 처리 */
 }
 
 .today_list {
@@ -152,150 +158,11 @@ header {
 
 .today_list_input {
     flex: 2; /* 40% 비율 */
-    /* background-color: #F0FDF4; */
+    background-color: #F0FDF4;
     padding: 10px;
     border-radius: 10px;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
 }
-
-/* 습관 관리 관련 */
-.habit_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    overflow: hidden; /* 안 보이는 건 숨김 처리 */
-}
-
-.habit_list {
-    flex: 3;
-    height: calc(40px * 5); /* 각 항목 높이 × 6행 */
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.habit_list ol {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.habit_list ol li {
-    width: 100%;
-    height: 45px; /* 정확한 행 높이 */
-    box-sizing: border-box;
-    justify-content: space-between;
-    padding-left: 8px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-}
-
-.habit_list_input {
-    flex: 2; /* 40% 비율 */
-    /* background-color: #F0FDF4; */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
-}
-
-/* 향후 일정 관련 */
-.week_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    overflow: hidden; /* 오늘의 할 일 전체에서 넘치는 건 숨김 */
-}
-
-.week_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    overflow: hidden; /* 안 보이는 건 숨김 처리 */
-}
-
-.week_list {
-    flex: 3;
-    height: calc(40px * 5); /* 각 항목 높이 × 6행 */
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.week_list ol {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.week_list ol li {
-    width: 50%;
-    height: 45px; /* 정확한 행 높이 */
-    box-sizing: border-box;
-    padding-left: 8px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-}
-
-.week_list_input {
-    flex: 2; /* 40% 비율 */
-    /* background-color: #F0FDF4; */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
-}
-
-/* 다이어리 관련 */
-.diary_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    overflow: hidden; /* 오늘의 할 일 전체에서 넘치는 건 숨김 */
-}
-
-.diary_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    overflow: hidden; /* 안 보이는 건 숨김 처리 */
-}
-
-.diary_list {
-    flex: 3;
-    height: calc(40px * 5); /* 각 항목 높이 × 6행 */
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.diary_list ol {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.diary_list ol li {
-    width: 50%;
-    height: 45px; /* 정확한 행 높이 */
-    box-sizing: border-box;
-    padding-left: 8px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-}
-
-.diary_list_input {
-    flex: 2; /* 40% 비율 */
-    /* background-color: #F0FDF4; */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
-}
-
 
 hr {
     border: 0;
@@ -314,8 +181,8 @@ footer {
 }
 
 /* 모바일 전용 */
-.main_container_mobile,
-.main_container_list_mobile {
+.ranking_container_mobile,
+.ranking_container_list_mobile {
     display: none;
 }
 
@@ -325,11 +192,11 @@ footer {
         width: 100%;
     }
 
-    .main_container {
+    .ranking_container {
         display: none;
     }
 
-    .main_container_mobile {
+    .ranking_container_mobile {
         display: block;
         width: 100%;
         padding: 20px;
@@ -337,7 +204,7 @@ footer {
         background-color: white;
     }
 
-    .main_container_list_mobile {
+    .ranking_container_list_mobile {
         display: flex;
         justify-content: space-around;
         position: fixed;
@@ -347,7 +214,7 @@ footer {
         padding: 10px 0;
     }
 
-    .main_container_list_mobile li {
+    .ranking_container_list_mobile li {
         color: white;
         list-style: none;
     }
