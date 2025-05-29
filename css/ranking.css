@@ -80,21 +80,109 @@ header {
 .ranking_info_chart_body {
     display: flex;
     gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* 모바일 대응 */
+}
+
+/* 통계 요약 */
+.ranking_info {
+    flex: 1;
+    background-color: #F0FDF4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+    color: #065F46;
+    font-size: 16px;
+    min-width: 240px;
+}
+
+.ranking_info h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #047857;
+}
+
+.ranking_info_chart_body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .ranking_info {
-    flex: 0 0 40%;
-    border: 1px solid black;
+    flex: 1;
+    background-color: #F0FDF4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+    color: #065F46;
+    font-size: 16px;
+    min-width: 240px;
+}
+
+.ranking_info h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #047857;
+}
+
+.ranking_summary {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking_summary li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.ranking_summary strong {
+    color: #10B981;
+    font-weight: bold;
 }
 
 .ranking_chart {
-    flex: 0 0 55%;
+    flex: 2;
+    min-width: 280px;
+    max-width: 100%;
 }
 
 .ranking_chart img {
     width: 100%;
-    border: 2px solid #E5E7EB;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.ranking_summary {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking_summary li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.ranking_summary strong {
+    color: #10B981;
+    font-weight: bold;
+}
+
+/* 차트 이미지 */
+.ranking_chart {
+    flex: 2;
+    min-width: 280px;
+    max-width: 100%;
+}
+
+.ranking_chart img {
+    width: 70%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .body_profile_info h2 {
