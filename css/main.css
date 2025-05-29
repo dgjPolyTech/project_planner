@@ -18,7 +18,7 @@ header {
     color: #065F46;
     padding: 15px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    height: 5%;
+    height: 5.5%;
 }
 
 .title {
@@ -205,13 +205,6 @@ header {
     display: flex;
     gap: 20px;
     flex: 1;
-    overflow: hidden; /* 오늘의 할 일 전체에서 넘치는 건 숨김 */
-}
-
-.week_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
     overflow: hidden; /* 안 보이는 건 숨김 처리 */
 }
 
@@ -231,9 +224,10 @@ header {
 }
 
 .week_list ol li {
-    width: 50%;
+    width: 100%;
     height: 45px; /* 정확한 행 높이 */
     box-sizing: border-box;
+    justify-content: space-between;
     padding-left: 8px;
     border-bottom: 1px solid #ccc;
     display: flex;
