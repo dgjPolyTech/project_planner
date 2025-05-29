@@ -27,7 +27,7 @@ header {
     align-items: center;
 }
 
-.ranking-title {
+.main-title {
     font-size: 24px;
     font-weight: bold;
 }
@@ -200,6 +200,14 @@ header {
     border-bottom: 1px solid #A7F3D0;
     cursor: pointer;
     transition: background 0.2s;
+}
+
+.menu_list a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit;        /* 부모(li)의 글자색 상속 */
+    display: block;        /* 전체 영역 클릭 가능하도록 */
+    width: 100%;
+    height: 100%;
 }
 
 .menu_list li:hover {
