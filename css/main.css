@@ -247,12 +247,12 @@ header {
 }
 
 .habit_list_input {
-    flex: 2; /* 영역 내 비율 */
+    flex: 2;
     padding: 10px;
-    border-radius: 10px; 
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.05); 
-    display: flex; 
-    flex-direction: column; /* 정렬 방향 */
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     font-size: 14px;
     box-sizing: border-box;
@@ -265,6 +265,28 @@ header {
 }
 
 .habit_list_input hr {
+    margin: 4px 0;
+}
+
+.today_list_input {
+    flex: 2; /* 영역 내 비율 */
+    padding: 10px;
+    border-radius: 10px; 
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05); 
+    display: flex; 
+    flex-direction: column; /* 정렬 방향 */
+    gap: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.today_list_input h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.today_list_input hr {
     margin: 4px 0;
 }
 
