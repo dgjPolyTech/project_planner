@@ -102,23 +102,6 @@ header {
     color: #047857;
 }
 
-.ranking_info {
-    flex: 1;
-    background-color: #F0FDF4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
-    color: #065F46;
-    font-size: 16px;
-    min-width: 240px;
-}
-
-.ranking_info h3 {
-    margin-bottom: 12px;
-    font-size: 18px;
-    color: #047857;
-}
-
 .ranking_summary {
     list-style: none;
     padding: 0;
@@ -146,22 +129,6 @@ header {
     height: auto;
     display: block;
     border-radius: 8px;
-}
-
-.ranking_summary {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.ranking_summary li {
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
-.ranking_summary strong {
-    color: #10B981;
-    font-weight: bold;
 }
 
 /* 차트 이미지 */
@@ -237,46 +204,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.today_body {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    overflow: hidden; /* 안 보이는 건 숨김 처리 */
-}
-
-.today_list {
-    flex: 3;
-    height: calc(40px * 5); /* 각 항목 높이 × 6행 */
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.today_list ol {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.today_list ol li {
-    width: 50%;
-    height: 45px; /* 정확한 행 높이 */
-    box-sizing: border-box;
-    padding-left: 8px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-}
-
-.today_list_input {
-    flex: 2; /* 40% 비율 */
-    background-color: #F0FDF4;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
 }
 
 hr {
