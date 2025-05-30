@@ -102,13 +102,6 @@ header {
     color: #047857;
 }
 
-.ranking_info_chart_body {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
 .ranking_info {
     flex: 1;
     background-color: #F0FDF4;
